@@ -8,14 +8,18 @@ class App < Sinatra::Base
       erb :'../views/super_hero'
     end
     
-    post "/teams" do
-      
-      @team_name = params["team"]["name"]
-      @team_motto = params["team"]["motto"]
-      @team_members = params["team"]["members"]
-      
-      erb :'../views/team'
+    post "/" do
+      "hello world"
     end
+    
+    # post "/teams" do
+      
+    #   @team_name = params["team"]["name"]
+    #   @team_motto = params["team"]["motto"]
+    #   @team_members = params["team"]["members"]
+      
+    #   erb :'../views/team'
+    # end
     
 
 
